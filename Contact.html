@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!--link to css-->
+   <link rel="stylesheet" href="CSS/contact.css">
+   <link rel="stylesheet" href="CSS/header.css">
+
+    <!--link to fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>Contact Information</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Art.html">Art Gallery</a></li>
+                
+                <li><a>Past Experiences</a>
+                    <ul class="drop">
+                        <li><a href="Work.html">Work</a></li>
+                        <li><a href="volenteer.html">Volenteer</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a href="Contact.html"><button>Contact Me</button></a>
+    </header>
+
+    <!--------------------------Main------------------------>
+
+   <div class="F">
+        <div class="trapezoid">
+            <div class="trapezoid2"></div>
+            <div class="text">
+                <h1>Contact Information</h1>
+                <h3>Phone Number:</h3>
+                <p>672-866-7333</p>
+                <h3>E-mail:</h3>
+                <p>eva.guo@mail.utoronto.ca</p>
+                <h3>Linkedin:</h3>
+                <p>linkedin.com/in/eva-guo-17b171308</p>
+            </div>
+            
+        </div>
+        
+        <div class="Con">
+            <h2>Leave a Message</h2>
+
+            <form action="submit" method="GET">
+                <lable for="01">I will adress you by:</lable>
+                <input type="text" id="01" placeholder="&ensp; Title + Name">
+            </form>
+
+            <form action="submit" method="GET">
+                <label for="02">I will be responding you by:</label>
+                <input type="email" id="02" placeholder="&ensp; e-mail">
+            </form>
+
+            <label>Type of Message</label>
+            <select>
+                <option>(click to select)</option>
+                <option value="1">Intrested in hiring</option>
+                <option value="2">Wants to be friends</option>
+                <option value="3">Would like to discuss a question</option>
+                <option value="4">🥳</option>
+            </select> <!--dropdown selection-->
+
+            <lable for="03">Message:</lable>
+            <textarea rows="6" cols="66" id="03"></textarea> 
+            <!--text area-->
+
+            <button class="send" type="submit">Send!</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
