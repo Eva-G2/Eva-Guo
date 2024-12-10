@@ -1,0 +1,28 @@
+
+body{
+    background-color:rgb(230, 235, 226);
+}
+
+h1{
+    font-family:Cinzel;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(141, 233, 51);
+    text-shadow:5px 3px 0px rgb(129, 73, 202);
+}
+
+.shape1{
+    font-size:500px;
+    transform:translate(0%,-400px);
+    text-align: center;
+
+}
+
+.shape1 :hover{
+    transform: rotate(720deg);
+    transition: all 1s ;
+}
+
+a{
+    text-decoration: none;
+}
