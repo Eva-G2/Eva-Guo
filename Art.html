@@ -10,68 +10,164 @@
         <link rel="stylesheet" href="CSS/Art.css">
         <link rel="stylesheet" href="CSS/header.css">
     
-         <!--link to fonts-->
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+        <!--link to fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+        
+
+        <!--Link to font-awsome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Education.html">Education</a></li>
-                <li>Art Gallery</li>
-                
-                <li><a>Past Experiences</a>
-                    <ul class="drop">
-                        <li><a href="Work.html">Work</a></li>
-                        <li><a href="volenteer.html">Volenteer</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <a href="Contact.html"><button>Contact Me</button></a>
+        <div class="row">
+            <a id="ham" onclick="showFunction()"> <!---->
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            
+            <nav class="navigation">
+                <ul class="nav">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li>Art Gallery</a></li>
+                    
+                    <li><a>Past Experiences</a>
+                        <ul class="drop">
+                            <li><a href="Work.html">Work</a></li>
+                            <li><a href="volenteer.html">Volenteer</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <a href="Contact.html"><button class="button">Contact Me</button></a>
     </header>
 
-    <div class="cards1">
-        <div class="card1">
-             <img class="image" src="Images/4381622079725_.pic_hd copy.jpg" alt="a painter full face mask">   
-        </div>
-
-        <div class="card2">
-            <img class="image" src="Images/HELP THE HOMELESS ANIMALS copy.png" alt="poster asking for donation with a stray cat">
+    <!-----------------Main---------------------------->
+    <h1>Click images for more information ~</h1>
+    <div class="cards">
+        <div class="box">
+            <div class="card1" id="card">
+                <img class="image" src="Images/4381622079725_.pic_hd copy.jpg" alt="a painter full face mask">  
+            </div>
+            <div class="pop" id="pop1">
+                <div class="sort">
+                    <!--large image-->
+                    <img class="big" src="Images/4381622079725_.pic_hd copy.jpg" alt="a painter full face mask">
+                    <!--caption-->
+                    <div id="cap">
+                        <h3 class="x">X</h3>
+                        <h2>Mask of Death</h2>
+                        <p>This is a peice of art form my highschool English class. I was inspired by the novel: "The Book Thief".</p>
+                </div>
+                </div>
+                
+            </div>
         </div>
         
-        <div class="card3">
-            <img class="image" src="Images/Save the killer whales copy.pdf" alt="poster with a killer whale">
+        <div class="box">
+            <div class="card2" id="card">
+                <img class="image" src="Images/HELP THE HOMELESS ANIMALS copy.png" alt="poster asking for donation with a stray cat">
+            </div>
+            <div class="pop" id="pop2">
+                <div class="sort">
+                    <img class="big" src="Images/HELP THE HOMELESS ANIMALS copy.png" alt="poster asking for donation with a stray cat">
+                    
+                    <div id="cap">
+                        <h3 class="x">X</h3>
+                        <h2>Help Me</h2>
+                        <p>This is a poster created for my highschool service groun Roots & Shoots Animals. It aims to raise awearness and ask for donation.</p>
+                </div>
+                </div>
+                
+            </div>
         </div>
+        
+        <div class="box">
+            <div class="card3" id="card">
+                <img class="image" src="Images/Cellular Respiration.png" alt="infographic explaining the process of cellular respiration">
+            </div>
+            <div class="pop" id="pop3">
+                <div class="sort">
+                    <img class="bigv" src="Images/Cellular Respiration.png" alt="infographic explaining the process of cellular respiration">
+                 
+                    <div id="capv">
+                        <h3 class="x">X</h3>
+                        <h2>Cellular Respiration Infographic</h2>
+                        <p>This is an infographic.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="card4" id="card">
+                <img class="image" src="Images/Professional.png" alt="a mice on a cheese">
+            </div>
+
+            <div class="pop" id="pop4">
+                <div class="sort">
+                    <div id="capL">
+                        <h3 class="x">X</h3>
+                        <h2>Animal with different styles</h2>
+                        <p>This is a photoshop project exploring different design styles.</p>
+                    </div>
+
+                    <div class="cont">
+                        <img class="small" src="Images/Professional.png" alt="a mice on a cheese">
+                        <img class="small" src="Images/Minimal.png" alt="two lines outlining a mice">
+                        <img class="small" src="Images/Flat.png" alt="geometric shaps displaying a mice on a cheese">
+                        <img class="small" src="Images/Alien.png" alt="a mice eating the sun">
+                        <h4>Professional</h4>
+                        <h4>Minimal</h4>
+                        <h4>Flat</h4>
+                        <h4>Alien</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" >
+            <div class="card5" id="card">
+                <img class="image" src="Images/IMG_3342-2.png" alt="a chimeny in a window">
+            </div>
+            <div class="pop" id="pop5">
+                <div class="sort">
+                    <img class="big" src="Images/IMG_3342-2.png" alt="a chimeny in a window">
+                 
+                    <div id="cap">
+                        <h3 class="x">X</h3>
+                        <h2>Fresh Smoke</h2>
+                        <p>This is a photo taken under a window, portraying the white cloud as smoke coming out of a chimeny. This indicates the concerns of pollution in the modern world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="card6" id="card">
+                <img class="image" src="Images/Artboard 1.png" alt="a doughnut with icing">
+                
+            </div>
+        </div>
+
+
 
     </div>
 
-    <div class="cards2">
-        
-        <div class="card4">
-            <img class="image" src="Images/IMG_1302.HEIC" alt="housees with sunsetting skyies in the background">
-        </div>
-
-        <div class="card5">
-            <img class="image" src="Images/IMG_1459.HEIC" alt="rising moon on a construction site">
-        </div>
-
-        <div class="card6">
-            <img class="image" src="Images/IMG_3342.HEIC" alt="a chimeny in a window">
-            
-        </div>
-    </div>
    
 
 
 
 
-
-
+    <script src="JavaScript/art.js"></script>
+    <script src="JavaScript/header.js"></script>
     
 </body>
 </html>
